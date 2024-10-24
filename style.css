@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mona Sans';
+    
+}
+html,body{
+    background-color:#F8F7F4;
+    font-family: "gilroy";
+    height: 100%;
+    overflow-x: hidden;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   
+}
+#nav{
+    padding: 1.5vw 2.5vw;
+    font-family: 'Mona Sans';
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-1 h5{
+    font-size:1vw;
+    font-weight: bolder;
+    margin-right: 50px;
+}
+#nav-2 img{
+    height: 52px;
+}
+#nav-3{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+}
+#nav-3 :nth-child(1){
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 45px;
+}
+#nav-3 h5{
+    font-size: 15px;
+    font-weight: 900;
+}
+#nav-3 :nth-child(3){
+    width: fit-content;
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+    border-radius: 55px;
+    background-color: black;
+}
+#page1{
+    padding:3vw;
+    font-family: 'Source Serif 4';
+    height: 70vh;
+}
+#page1 :nth-child(1){
+    padding: 5px;
+    width: fit-content;
+    border-radius: 50px;
+    background-color: pink;
+    text-align: center;
+    margin: 50px auto; /* Center the input horizontally */
+    display: block;
+    margin-bottom: 3vw;
+}
+#page1 h1{
+    font-size: 4.8vw;
+    text-align: center;
+    line-height: 10vh;
+    font-weight: 500;
+    margin-bottom: 2vw;
+}
+#page1 h4{
+    font-family: 'Mona Sans';
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 2.1vw;
+}
+#page1 h5{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: black;
+    width: fit-content;
+    border-radius: 50px;
+    display:inline-block;  
+    margin: 0 50%;
+}
+#scroll{
+    height: 55vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+#contain{
+    height: 100%;
+    display: inline-block;
+    width: 170%;
+    padding: .8vw;
+    animation-name: anime;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+#contain img, #contain video {
+    height: 80%;
+    width: 10.2%;
+    border-radius: 50px;
+    margin-right: 1.5vw; /* Ensure spacing between elements */
+    object-fit: cover;
+}
+#page2{
+    min-height: 100%;
+    width: 100%;
+}
+#page2 h2{
+    font-size: 3.2vw;
+    text-align: center;
+  
+}
+#page2-low{
+    min-height: 100vh;
+    padding: 4.5vw; 
+}
+.box{
+    margin: 1vw;
+    display: inline-block;
+    height: 40vh;
+    width: 40vh;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+   
+    
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#boxlow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4vw;
+    color: white;
+    padding: 2.5vw 1.2vw;
+    bottom: -30%;
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(transparent,rgba(30, 26, 26, 0.671));
+    transition: all ease .3s;
+}
+.box:hover #boxlow{
+   bottom: 0;
+}
+#lowtext{
+    display: flex;
+    justify-content: center;
+}
+#lowtext h4{
+    padding: 1vw;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-bottom: 10vh;
+}
+
+#page3{
+    height: 90%;
+    width: 100%;
+    background-color: #FFDA79;
+    padding: 8vw;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}
+#page3 h1{
+    font-size: 4.4vw;
+    line-height: 5vw;
+    font-weight: 400;
+    font-family: 'Source Serif 4';
+    margin-bottom: 1.8vw;
+}
+#but{
+    display: flex; 
+    gap: 1vw;
+    margin-top: 4vh;
+    margin-bottom: 6.5vh;
+}
+#but h6{
+    font-family: 'Mona Sans';
+    width: fit-content;
+    font-size: 1vw;
+    font-weight: 900;
+    padding: 18px 23px;
+    border-radius: 50px;
+}
+#but :nth-child(1){
+    color: white;
+    background-color: black;
+}
+#but :nth-child(2){
+    background-color: white;
+}
+#page3 h5{
+    font-family: 'Mona Sans';
+    font-size: 1.3vw;
+    margin-bottom: .8vw;
+}
+#page3 h4{
+    font-family: 'Mona Sans';
+    font-size: 1.5vw;
+}
+#page5{
+    height: 70.5%;
+    width: 100%;
+    padding: 3vw 0vw;
+}
+#roll{
+    height: 45%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: 2.5vw;
+    overflow-y: hidden;
+}
+#scrl{
+    height: 100%;
+    display: inline-block;
+    width: 135%;
+    padding: 0vw .5vw;
+    animation-name: anime;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  
+}
+@keyframes ani {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translatex(calc(100% - 4px));
+    }
+}
+#scrl img{
+    height: 100%;
+    width: 11%;
+    border-radius: 10px;
+    margin-right: 1.9vw;
+}
+#scrl img:hover{
+    box-shadow: 12px 0px 8px rgba(8, 5, 5, 0.635);
+}
+#last{
+    height: 35%;
+    padding: 4vw 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#last img{
+    height: 4.5vw;
+    width: 6vw;
+}
+#last-text{
+    font-family: Mona Sans;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    font-weight: 900;
+}
+
+@media (max-width:600px){
+    #nav{
+        padding: .7vw 1vw;
+        font-family: 'Mona Sans';
+        height: 5vh;
+        width: 100%;
+    }
+  
+    #nav-1 h5{
+        display: none;
+    }
+    #nav-2 img{
+        height: 35px;
+    }
+    #nav-3{
+        width: 70%;
+        gap: 10px;
+    }
+    #nav-3 :nth-child(1){
+        font-size: 9px;
+        padding: 3px;
+        border-radius: 20px;
+    }
+    #nav-3 h5{
+        font-size: 7.5px;
+    }
+    #nav-3 :nth-child(3){
+        width: fit-content;
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 22px;
+    }
+    #page1{
+        padding:3vw;
+        font-family: 'Source Serif 4';
+        height: 40vh;
+        margin-bottom: 8vw;
+    }
+    #page1 :nth-child(1){
+        font-size: 3.2vw;
+        padding: 2.5px;
+        width: fit-content;
+        border-radius: 20px;
+        margin: 30px auto; /* Center the input horizontally */
+        margin-bottom: 4vw;
+    }
+    #page1 h1{
+        font-size: 10vw;
+        line-height: 6vh;
+        margin-bottom: 5vw;
+        font-weight: 400;
+    }
+    #page1 h4{
+        font-family: 'Mona Sans';
+        text-align: center;
+        font-size: 12.5px;
+        margin-bottom: 2.5vw;
+    }
+    #page1 h5{
+        font-size: 10px;
+        text-align: center;
+        color: white;
+        padding: 8px;
+    }
+    #scroll{
+        height: 30vh;
+        width: 100%;
+    }
+    #contain{
+        height: 100%;
+        width:140%;
+        padding: 1vw;
+        overflow-x: hidden;
+    }
+    
+    #contain img, #contain video {
+        height: 80%;
+        width: 30%;
+        border-radius: 30px;
+        margin-right: 4vw; /* Ensure spacing between elements */
+       
+    }
+    #page2{
+       height: 320vh;
+        width: 100%;
+    }
+    #page2 h2{
+        font-size: 6vw;
+        text-align: center;
+      
+    }
+    #page2-low{
+        height: 60vh;
+        padding: 10vw; 
+        margin: 0 10%;
+    }
+    .box{
+        margin: 0;
+        height: 25vh;
+        width: 30vh;
+       
+    }
+
+    #boxlow{
+        font-size: 4vw;
+
+        padding: 2.5vw 3.5vw;
+    }
+
+    
+#page3{
+    height: 45%;
+}
+#page3 h1{
+    font-family: 'Source Serif 4';
+    font-size: 8vw;
+    line-height: 10vw;
+    font-weight: 600;
+    margin-bottom: 6vw;
+}
+#page3 h5{
+    font-size: 10vw;
+}
+#but{
+    margin-top: 2vh;
+    margin-bottom: 3.5vh;
+}
+#but h6{
+    font-family: 'Mona Sans';
+    width: fit-content;
+    font-size: 2.5vw;
+    font-weight: 900;
+    padding: 10px 15px;
+}
+#but :nth-child(1){
+    color: white;
+    background-color: black;
+}
+#but :nth-child(2){
+    background-color: white;
+}
+#page3 h5{
+    font-family: 'Mona Sans';
+    font-size: 3.1vw;
+    margin-bottom: .8vw;
+    font-weight: 400;
+}
+#page3 h4{
+    font-family: 'Mona Sans';
+    font-size: 5vw;
+}
+
+#page5{
+    height: 40%;
+    width: 100%;
+    padding: 3vw 0vw;
+}
+#roll{
+    height: 65%;
+    width: 120%;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+#scrl{
+    height:100%;
+    width: 180%;
+    padding: 2.5vw 1vw;
+  
+}
+#scrl img{
+    height: 55%;
+    width: 10%;
+    margin-right: 2vw;
+}
+#last{
+    padding: 2vw 5vw;
+}
+#last img{
+    height: 8vw;
+    width: 12vw;
+}
+#last-text{
+    font-size: 2.2vw;
+    display: flex;
+    font-weight: 700;
+} 
+}
